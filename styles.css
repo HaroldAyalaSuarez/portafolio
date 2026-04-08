@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f5efe6;
+  color: #3e2c1c;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fffaf3;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #7a4e2d;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #5c3a21;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #a47148;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* 👇 ESTE ES EL ARREGLO DEL BANNER */
+.banner {
+  height: 200px;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #7a4e2d;
+  font-weight: 600;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #7a4e2d;
+  color: #3e2c1c;
+}
+
+.contenedor-proyectos {
+  display: flex;
+  gap: 20px;
+}
+
+.contenedor-proyectos article {
+  flex: 1;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background: #fdf6ee;
+  border: 1px solid #e6d3c3;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+.contenedor-proyectos article img {
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  margin-top: 0;
+  color: #5c3a21;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #7a5c4b;
+}
+
+form {
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d6bfa7;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fffaf3;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background: #7a4e2d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5c3a21;
+}
+
+@media (max-width: 768px) {
+
+  .contenedor-proyectos {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+}
